@@ -48,7 +48,6 @@ class PopulateRoomCallback(private val context: Context) : RoomDatabase.Callback
                 }
             }
         } catch (exception: Exception) {
-            Log.d("ileana", exception.message.toString())
             Log.e(
                 "App",
                 exception.localizedMessage ?: "failed to pre-populate users into database"
